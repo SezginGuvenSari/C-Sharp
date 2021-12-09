@@ -6,7 +6,7 @@ namespace ExampleProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Example Project!");
         }
     }
 }
