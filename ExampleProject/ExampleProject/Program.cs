@@ -137,6 +137,18 @@ namespace ExampleProject
 
             #endregion
 
+
+            #region  Ternary Operator
+
+            int ab;
+            int value;
+            bool isGreater =  ab > value ? true : false;
+
+            
+
+
+            #endregion
+
         }
     }
 }
