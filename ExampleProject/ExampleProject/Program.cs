@@ -94,6 +94,15 @@ namespace ExampleProject
 
             #endregion
 
+
+
+            #region ModulusOperator
+
+
+            Console.WriteLine(5 % 4);
+
+            #endregion
+
         }
     }
 }
