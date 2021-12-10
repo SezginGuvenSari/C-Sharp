@@ -103,6 +103,16 @@ namespace ExampleProject
 
             #endregion
 
+
+            #region Increment and Decrement Operators
+
+            int number = 4;
+            number++;
+            Console.WriteLine(number);
+
+
+            #endregion
+
         }
     }
 }
