@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ExampleProject
 {
@@ -49,7 +50,32 @@ namespace ExampleProject
                 e = 1;
             }
 
-          
+
+            #endregion
+
+
+
+            #region Loops : 
+
+            // First Example
+            int d = 3;
+
+            while (d > 0)
+            {
+                Console.WriteLine("Loading");
+                d--;
+            }
+
+            // Second Example
+            List<string> collection = new List<string>() {"a","b","c" };
+
+            for (int i = 0; i <collection.Count; i++)
+            {
+                Console.WriteLine(collection[i]);
+            }
+            
+
+
             #endregion
 
         }
