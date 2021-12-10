@@ -30,6 +30,28 @@ namespace ExampleProject
             #endregion
 
 
+            #region Conditional Statements
+
+            bool complete = false;
+            bool started = true;
+            int e;
+
+            if (complete)
+            {
+                 e = 5;
+            }
+            else if(started)
+            {
+                 e = 3;
+            }
+            else
+            {
+                e = 1;
+            }
+
+          
+            #endregion
+
         }
     }
 }
