@@ -17,6 +17,8 @@ namespace ExampleProject
             PrintHi();
             PrintMessage("Hey there");
 
+           
+
 
             #region Veriables
 
@@ -142,12 +144,21 @@ namespace ExampleProject
 
             int ab;
             int value;
-            bool isGreater =  ab > value ? true : false;
+            //bool isGreater =  ab > value ? true : false;
 
-            
+
 
 
             #endregion
+
+            #region sizeof() and typeof() operator
+
+            Console.WriteLine(sizeof(int));
+            Console.WriteLine(typeof(int));
+
+           
+            #endregion
+
 
         }
     }
