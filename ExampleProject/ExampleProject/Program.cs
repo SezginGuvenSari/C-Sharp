@@ -3,6 +3,12 @@ using System.Collections.Generic;
 
 namespace ExampleProject
 {
+
+    public class Ex1 { }  // Object oriented programming
+    public class Ex2 : Ex1 { }
+    
+
+    
     class Program
     {
         static void Main(string[] args)
@@ -110,6 +116,24 @@ namespace ExampleProject
             number++;
             Console.WriteLine(number);
 
+
+            #endregion
+
+
+            #region IS and As Operators
+
+            // Is operators
+            bool climp = "Mountain" is string;
+            Console.WriteLine(climp);
+
+            Ex2 ex2Object = new Ex2();
+            bool h = ex2Object is Ex1;
+            Console.WriteLine(h);
+
+            // As Operators
+            string s1 = "abc";
+            object obj1 = s1;
+            string s2 = obj1 as string;
 
             #endregion
 
