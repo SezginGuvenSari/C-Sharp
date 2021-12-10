@@ -8,6 +8,8 @@ namespace ExampleProject
         static void Main(string[] args)
         {
            Console.WriteLine("Hello Example Project!");
+            PrintHi();
+            PrintMessage("Hey there");
 
 
             #region Veriables
@@ -73,8 +75,22 @@ namespace ExampleProject
             {
                 Console.WriteLine(collection[i]);
             }
-            
 
+
+
+            #endregion
+
+
+            #region Functions
+
+            void PrintHi()
+            {
+                Console.WriteLine("Hi");
+            }
+            static void PrintMessage(string message)
+            {
+                Console.WriteLine(message);
+            }
 
             #endregion
 
