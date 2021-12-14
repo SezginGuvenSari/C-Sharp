@@ -17,7 +17,23 @@ namespace DataTypes
 
 
             #endregion
-            
+
+
+
+            #region Numbers
+
+            int i = 0;
+            i = 5;
+            Console.WriteLine(i);
+            Console.WriteLine(i++);
+            Console.WriteLine(++i);
+            Console.WriteLine(--i);
+            Console.WriteLine(3 * 2);
+            Console.WriteLine(10 / 2);
+            Console.WriteLine(10 % 3);
+            Console.WriteLine(6.6f + 2.1f);
+
+            #endregion
         }
     }
 
