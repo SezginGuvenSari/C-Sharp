@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Text;
 namespace DataTypes
 {
     class Program
@@ -108,6 +108,39 @@ namespace DataTypes
             System.Console.WriteLine("Hello \r World");
             System.Console.WriteLine("Hello \t World");
             System.Console.WriteLine("Hello \t\t\t\t World");
+
+            #endregion
+
+
+            #region StringBuilder Class
+
+            StringBuilder stringBuilder = new StringBuilder();
+             stringBuilder.Append("Hello World");
+            for (int d = 0; d < 4; d++)
+            {
+                stringBuilder.Append("Nice to see you!");
+            }
+            string s = stringBuilder.ToString();
+
+            System.Console.WriteLine(s);
+            stringBuilder.Clear();
+            s = stringBuilder.ToString();
+            System.Console.WriteLine(s);
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Hello World");
+            sb.AppendLine("Hello World");
+            System.Console.WriteLine(sb.ToString());
+
+
+            StringBuilder sc = new StringBuilder("Hello World");
+            sc.Remove(6, 5);
+            System.Console.WriteLine(sc.ToString());
+
+
+            StringBuilder sd = new StringBuilder("This is a string with some spaces");
+            sd.Replace(" ", "_");
+            System.Console.WriteLine(sd.ToString());
 
             #endregion
 
