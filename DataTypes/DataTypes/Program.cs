@@ -100,6 +100,16 @@ namespace DataTypes
 
             #endregion
 
+            #region String escape sequences
+
+            System.Console.WriteLine("Boby said \"Go write some code\"");
+            System.Console.WriteLine("a\\b");
+            System.Console.WriteLine("\a");
+            System.Console.WriteLine("Hello \r World");
+            System.Console.WriteLine("Hello \t World");
+            System.Console.WriteLine("Hello \t\t\t\t World");
+
+            #endregion
 
         }
 
