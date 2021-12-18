@@ -13,8 +13,8 @@ namespace DataTypes
             Type sType = typeof(string);
             Console.WriteLine(sType.FullName);
 
-
-
+          
+       
 
             #endregion
 
@@ -34,13 +34,24 @@ namespace DataTypes
             Console.WriteLine(6.6f + 2.1f);
 
             #endregion
+
+            #region MathClass
+
+            System.Console.WriteLine(Math.Abs(-3));
+            System.Console.WriteLine(Math.Abs(-3.5f));
+            System.Console.WriteLine(Math.Round(3.7f));
+            System.Console.WriteLine(Math.Round(3.2f));
+            System.Console.WriteLine(Math.Ceiling(3.2f));
+            System.Console.WriteLine(Math.Floor(5.9f));
+            System.Console.WriteLine(Math.Min(1,3));
+            System.Console.WriteLine(Math.Max(1,3));
+            
+
+            #endregion
+
         }
+       
     }
 
-
-
-
-
-
-
+    
 }
