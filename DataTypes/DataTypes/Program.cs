@@ -70,6 +70,25 @@ namespace DataTypes
             #endregion
 
 
+            #region Checking string equality
+
+            string s6 = "abc";
+            string s7 = "abc";
+            System.Console.WriteLine(s6 == s7);
+            System.Console.WriteLine(string.Equals(s6, s7)); // other way
+
+            #endregion
+
+
+            #region @ and $ with string 
+
+            string @if = "Hello world";
+            System.Console.WriteLine("a\nb");
+            System.Console.WriteLine(@"a\nb");
+
+            string name = "bob";
+            System.Console.WriteLine($"Hi my name is {name}.");
+            #endregion
         }
 
 
