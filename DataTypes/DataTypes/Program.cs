@@ -4,6 +4,7 @@ namespace DataTypes
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             #region BasicDataTypes
@@ -13,8 +14,9 @@ namespace DataTypes
             Type sType = typeof(string);
             Console.WriteLine(sType.FullName);
 
-          
-       
+
+           
+           
 
             #endregion
 
@@ -45,12 +47,35 @@ namespace DataTypes
             System.Console.WriteLine(Math.Floor(5.9f));
             System.Console.WriteLine(Math.Min(1,3));
             System.Console.WriteLine(Math.Max(1,3));
-            
+
 
             #endregion
 
+            #region Characters and Strings
+
+            string s1 = "Hi";
+            string emptyString = "";
+            string emptyString2 = String.Empty;
+
+            string s2 = "Hey";
+            string s3 = "There";
+            string s4 = s2 + " " + s3;
+            s4 += "!";
+            System.Console.WriteLine(s4);
+
+           // char char1 = "a";
+            //char char2 = "/n";
+            string s5 = "abc";
+
+            #endregion
+
+
         }
-       
+
+
+
+
+
     }
 
     
