@@ -89,13 +89,23 @@ namespace DataTypes
             string name = "bob";
             System.Console.WriteLine($"Hi my name is {name}.");
             #endregion
+
+            #region Substrings
+
+            string example1 = "abc";
+
+            System.Console.WriteLine(example1.Contains("bc"));
+            System.Console.WriteLine(example1.Substring(1));
+            System.Console.WriteLine(example1.Substring(0,2));
+
+            #endregion
+
+
         }
-
-
 
 
 
     }
 
-    
+
 }
