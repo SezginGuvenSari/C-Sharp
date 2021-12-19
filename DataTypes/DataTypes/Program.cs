@@ -144,6 +144,13 @@ namespace DataTypes
 
             #endregion
 
+
+            #region Validating string using string.IsNullorEmpty
+
+            string a = null;
+            System.Console.WriteLine(string.IsNullOrEmpty(a));
+            #endregion
+
         }
 
 
