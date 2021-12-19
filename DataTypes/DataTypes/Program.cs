@@ -151,6 +151,25 @@ namespace DataTypes
             System.Console.WriteLine(string.IsNullOrEmpty(a));
             #endregion
 
+
+            #region  Logical Operators
+
+            bool completed = false;
+
+            System.Console.WriteLine(!completed);
+
+            System.Console.WriteLine(true & true);
+
+            System.Console.WriteLine(true & false);
+
+
+
+
+
+
+            #endregion
+
+
         }
 
 
