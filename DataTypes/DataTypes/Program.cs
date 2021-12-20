@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Text;
+using System.Collections.Generic;
 namespace DataTypes
+
 {
     class Program
     {
@@ -166,6 +168,27 @@ namespace DataTypes
 
 
 
+
+            #endregion
+
+
+            #region Utilizing the boolean flag technique
+
+            bool flag = false;
+            List<int> intlist = new List<int>(){1,2,3};
+
+            foreach (int f in intlist)
+            {
+                if (f == 3)
+                {
+                    flag = true;
+                }
+            }
+
+            if (flag)
+            {
+                System.Console.WriteLine("3 was found!");
+            }
 
             #endregion
 
