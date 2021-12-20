@@ -9,6 +9,12 @@ namespace DataTypes
         
         static void Main(string[] args)
         {
+            int e = 200;
+            System.Console.WriteLine(e);
+            ChangeValue(e);
+            System.Console.WriteLine(e);
+
+
             #region BasicDataTypes
 
             int example = 1;  // System.Int32 example = 1;
@@ -193,7 +199,20 @@ namespace DataTypes
             #endregion
 
 
+           
+
+
         }
+
+        #region Value and Reference Type
+        static void ChangeValue(int num)
+        {
+            num = 500;
+            System.Console.WriteLine(num);
+        }
+
+
+        #endregion
 
 
 
