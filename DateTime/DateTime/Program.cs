@@ -27,7 +27,22 @@ namespace DateTimes
 
             #endregion
 
+            #region Formatting Dates And Times
 
+            System.Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy"));
+            System.Console.WriteLine(DateTime.Now.ToString("ddd,dd MMMM yyyy"));
+            System.Console.WriteLine(DateTime.Now.ToString("ddd,dd MMMM yyyy HH:mm:ss"));
+            System.Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy hh:mm tt"));
+
+            #endregion
+
+            #region UTC Time
+
+            System.Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy hh:mm tt"));
+            System.Console.WriteLine(DateTime.UtcNow.ToString("MM/dd/yyyy hh:mm tt"));
+            System.Console.WriteLine(DateTime.Now.ToUniversalTime().ToString("MM/dd/yyyy hh:mm tt"));
+
+            #endregion
 
         }
     }
