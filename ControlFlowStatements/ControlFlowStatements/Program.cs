@@ -87,8 +87,30 @@ namespace ControlFlowStatements
                 }
             }
 
-            
 
+
+            #endregion
+
+
+            #region Foreach Loops
+
+            foreach (char s in "abc")
+            {
+                System.Console.WriteLine(s);
+            }
+
+            #endregion
+
+
+
+            #region While loops
+
+            int g = 0;
+            while (g<4)
+            {
+                System.Console.WriteLine(g.ToString());
+                g++;
+            }
             #endregion
 
         }
