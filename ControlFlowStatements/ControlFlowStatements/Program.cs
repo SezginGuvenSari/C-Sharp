@@ -28,7 +28,7 @@ namespace ControlFlowStatements
 
             #region SwitchStatement
 
-            int value = 11;
+            int value = 11;   // For example int value = 2; You can change value.
 
             switch (value)
             {
@@ -60,7 +60,38 @@ namespace ControlFlowStatements
 
 
             #endregion
+
+
+            #region For Loops
+
+            for (int i = 0; i < 5; i++)
+            {
+                System.Console.WriteLine("Hello World");
+            }
+
+            string example = "abc";
+
+            for (int i = 0; i < example.Length; i++)
+            {
+                System.Console.WriteLine(example[i]);
+            }
+
+            
+            int a = 0;
+            for (; ; )
+            {
+                if (a < 4)
+                {
+                    System.Console.WriteLine(a.ToString());
+                    a++;
+                }
+            }
+
+            
+
+            #endregion
+
         }
-}
+    }
 }
 
