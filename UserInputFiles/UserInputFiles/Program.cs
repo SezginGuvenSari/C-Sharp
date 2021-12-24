@@ -9,20 +9,20 @@ namespace UserInputFiles
 
 
             #region ReadLine()
-
+            /*
 
             Console.WriteLine("Type some text: ");
 
             string userInput = Console.ReadLine();
 
             System.Console.WriteLine(userInput);
-
+            */
             #endregion
 
 
 
             #region Read()
-
+            /*
             //Example 1
             Console.WriteLine("Hit a key: ");
 
@@ -66,13 +66,13 @@ namespace UserInputFiles
                 y = Console.Read();
                 userInputs = Convert.ToChar(y);
             }
-
+            */
             #endregion
-           
+
 
             #region ReadKey()
 
-
+            /*
             ConsoleKeyInfo keyInfo;
             Console.TreatControlCAsInput = true;
 
@@ -88,7 +88,35 @@ namespace UserInputFiles
                     Console.Write("CTL+");
 
             } while (keyInfo.Key !=ConsoleKey.Escape );
+            */
+            #endregion
 
+
+            #region Obtaining numeric user input
+            /*
+            Console.WriteLine("\n Please enter a number: ");
+
+            do
+            {
+                string userInput = Console.ReadLine();
+                int number;
+
+                if(!int.TryParse(userInput,out number))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You entered invalid Input! ");
+                    Console.ResetColor();
+                    Console.WriteLine("\n Please enter a number: ");
+
+                }
+                else
+                {
+                    Console.WriteLine("\n Thanks! Enter another number: ");
+                }
+
+            } while (true);
+
+            */
             #endregion
 
 
