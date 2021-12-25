@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text;
 
 namespace UserInputFiles
 {
@@ -119,6 +121,27 @@ namespace UserInputFiles
             */
             #endregion
 
+
+            #region Working with files 
+
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Example.txt";
+
+            if (!File.Exists(path))
+            {
+                File.Create(path);
+            }
+
+            FileStream fs = File.Open(path, FileMode.Append);
+            byte[] info = new UTF8Encoding(true).GetBytes("Hello World!");
+
+            fs.Write(info, 0, info.Length);
+            fs.Close();
+
+            StreamReader sr = new StreamReader(path);
+            string fileText = sr.ReadToEnd();
+            System.Console.WriteLine(fileText);
+
+            #endregion
 
 
         }
