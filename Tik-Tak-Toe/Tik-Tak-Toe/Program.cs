@@ -17,13 +17,13 @@ namespace Tik_Tak_Toe
         static void DrawBoard()
         {
             Console.WriteLine("     |     |     ");
-            Console.WriteLine("  {0}   |  {1}   | {2}   ",spaces[0],spaces[1],spaces[2]);
+            Console.WriteLine("  {0}  |  {1}  | {2}   ",spaces[0],spaces[1],spaces[2]);
             Console.WriteLine("_____|_____|_____");
             Console.WriteLine("     |     |     ");
-            Console.WriteLine("  {0}   |  {1}   | {2}   ", spaces[3], spaces[4], spaces[5]);
+            Console.WriteLine("  {0}  |  {1}  | {2}   ", spaces[3], spaces[4], spaces[5]);
             Console.WriteLine("     |     |     ");
             Console.WriteLine("_____|_____|_____");
-            Console.WriteLine("  {0}   |  {1}   | {2}   ", spaces[6], spaces[7], spaces[8]);
+            Console.WriteLine("  {0}  |  {1}  | {2}   ", spaces[6], spaces[7], spaces[8]);
             Console.WriteLine("     |     |     ");
         }
 
