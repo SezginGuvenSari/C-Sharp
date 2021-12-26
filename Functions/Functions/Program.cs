@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace Functions
 {
@@ -94,7 +96,6 @@ namespace Functions
         #endregion
 
 
-
         #region Optional Parameters
 
 
@@ -104,6 +105,54 @@ namespace Functions
         {
             System.Console.WriteLine(message);
         }
+
+        #endregion
+
+        #region Asynchronous Function
+
+        /* This is an example of writing an asynchronous function using the await and async  keywords to await keyword 
+         * Just potentially long running work without blocking the Kohler's thread on async method. Run synchronously until
+         * it reaches its first await  expression at which that point the method is suspended until the task is complete.
+         */
+
+        static async Task CookMeat()
+        {
+            Debug.WriteLine("Cook Meat");
+        }
+
+        static async Task CookVegetables()
+        {
+            Debug.WriteLine("Cook Vegetables");
+        }
+
+        static async Task MakeBread()
+        {
+            Debug.WriteLine("Make Bread");
+        }
+
+        static async  Task MakeSoup()
+        {
+            Debug.WriteLine("Make Soup");
+        }
+
+        static async  Task MakeSalad()
+        {
+            Debug.WriteLine("Make Salad");
+        }
+        static async Task MakeDrinks()
+        {
+            Debug.WriteLine("Make Drinks");
+        }
+        static async Task MakeDinner()
+        {
+             await CookMeat();
+             await CookVegetables();
+             await MakeBread();
+             await MakeSoup();
+             await MakeSalad();
+             await MakeDrinks();
+        }
+
 
         #endregion
 
@@ -117,6 +166,7 @@ namespace Functions
              System.Console.WriteLine(pr.programNumber);*/
             PrintMessage();
             PrintMessage("Other Message");
+            MakeDinner();
 
 
             #region Anonymus Functions and  Lambda Expressions
