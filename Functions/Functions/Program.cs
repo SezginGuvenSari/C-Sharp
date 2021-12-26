@@ -77,7 +77,12 @@ namespace Functions
             #endregion
 
 
+            #region Func<TResult>
 
+            Func<int, int, int> multiply = (x, y) => { return x * y; };
+            System.Console.WriteLine(multiply(3, 2));
+
+            #endregion
 
 
         }
