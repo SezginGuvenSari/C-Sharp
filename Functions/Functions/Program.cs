@@ -2,34 +2,34 @@
 
 namespace Functions
 {
-    public class Program
+     public class Program
     {
 
 
         #region Constructors
 
-      /*  int programNumber;
-        string exampleName;
+        /*  int programNumber;
+          string exampleName;
 
-        public  Program(int num)
+          public  Program(int num)
 
-            {
+              {
 
-            programNumber = num;
+              programNumber = num;
 
-            }
+              }
 
-        public Program(int num,string name)
+          public Program(int num,string name)
 
-        {
+          {
 
-            programNumber = num;
-            exampleName = name;
+              programNumber = num;
+              exampleName = name;
 
-        }
+          }
 
 
-        */
+          */
         #endregion
 
 
@@ -54,6 +54,44 @@ namespace Functions
         */
         #endregion
 
+
+        #region Overloading
+
+        // Can't be achieve the same things by creating multiple functions, each having a different name
+        // Sure we can but overloading is best when you want to do the same operation with multiple inputs.
+
+
+        void Ex() { }
+
+        void Ex(int number) { }
+
+        void Ex(int number,int number2) { }
+
+        void Ex(string name,string name2) { }
+
+        void Ex(int number,string name) { }
+
+        void Ex(string name, int number) { }
+
+
+
+
+
+
+        #endregion
+
+
+        #region Overriding
+
+        public void PrintHelloWorld()
+        {
+            System.Console.WriteLine("Hello World");
+        }
+
+
+
+
+        #endregion
 
         static void Main(string[] args)
         {
@@ -85,6 +123,19 @@ namespace Functions
             #endregion
 
 
+
         }
+
+    }
+
+
+    public class  Program2 : Program
+    {
+
+      /*  public static void Main(string[] args)
+        {
+            Program2 ex = new Program2();
+            ex.PrintHelloWorld();
+        }*/
     }
 }
