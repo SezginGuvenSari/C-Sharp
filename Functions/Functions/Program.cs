@@ -93,6 +93,20 @@ namespace Functions
 
         #endregion
 
+
+
+        #region Optional Parameters
+
+
+        static void PrintMessage(string message = "Hello World")  // We can't use this parameters  string message = "Hello World", int number
+                                                                  // Because we don't have a int value. We need to change this code as follows
+                                                                  // int number , string message = "Hello World"
+        {
+            System.Console.WriteLine(message);
+        }
+
+        #endregion
+
         static void Main(string[] args)
         {
             /* Program program = new Program();
@@ -101,6 +115,8 @@ namespace Functions
              Program pr = new Program(5);
              Program ps = new Program(5, "Guven");
              System.Console.WriteLine(pr.programNumber);*/
+            PrintMessage();
+            PrintMessage("Other Message");
 
 
             #region Anonymus Functions and  Lambda Expressions
