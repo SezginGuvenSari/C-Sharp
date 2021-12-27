@@ -1,8 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Collections;
 namespace Interfaces_And_Abstract_Classes
 {
-    class Program : IExample, ISecondExample, INotifyPropertyChanged, IComparable
+    class Program : IExample, ISecondExample, INotifyPropertyChanged, IComparable,IComparer
     {
         #region IComparable
         public int exampleLength;
@@ -76,11 +77,27 @@ namespace Interfaces_And_Abstract_Classes
 
         }
 
+        public int Compare(object x, object y)
+        {
+            Employee employee1 = (Employee)x;
+            Employee employee2 = (Employee)y;
+            return employee1.id.CompareTo(employee2.id);
+        }
+
 
         #endregion
 
     }
 
+    #region IComparer
+
+    class Employee
+    {
+        public int id;
+    }
+
+    #endregion
+   
 
 
     #region  Creating an Interface 
