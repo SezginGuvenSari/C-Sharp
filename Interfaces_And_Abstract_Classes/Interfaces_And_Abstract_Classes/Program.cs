@@ -1,9 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+
 namespace Interfaces_And_Abstract_Classes
 {
-    class Program : IExample, ISecondExample, INotifyPropertyChanged, IComparable,IComparer
+    class Program : IExample, ISecondExample, INotifyPropertyChanged, IComparable,IComparer,IEquatable<Program>, IEqualityComparer<Officer>
     {
         #region IComparable
         public int exampleLength;
@@ -31,8 +34,8 @@ namespace Interfaces_And_Abstract_Classes
 
 
         #endregion
-       
 
+        public string exampleData;
 
         static void Main(string[] args)
         {
@@ -84,6 +87,25 @@ namespace Interfaces_And_Abstract_Classes
             return employee1.id.CompareTo(employee2.id);
         }
 
+        public bool Equals([AllowNull] Program other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            return exampleData.GetHashCode().Equals(other.exampleData.GetHashCode());
+        }
+
+        public bool Equals([AllowNull] Officer x, [AllowNull] Officer y)
+        {
+            return x.Id == y.Id;
+        }
+
+        public int GetHashCode([DisallowNull] Officer obj)
+        {
+            return obj.Id.GetHashCode();
+        }
+
 
         #endregion
 
@@ -118,6 +140,23 @@ namespace Interfaces_And_Abstract_Classes
 
     }
 
+
+    #endregion
+
+
+    #region IEqualityComparer
+
+
+    public class Officer
+    {
+        Guid id;
+
+        public Guid Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+    }
 
     #endregion
 }
