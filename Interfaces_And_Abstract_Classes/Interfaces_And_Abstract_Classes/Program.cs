@@ -159,4 +159,16 @@ namespace Interfaces_And_Abstract_Classes
     }
 
     #endregion
+
+
+
+    #region Creating an abstract class
+
+
+    abstract class Animal { }
+
+
+    class Dog: Animal { }
+
+    #endregion
 }
