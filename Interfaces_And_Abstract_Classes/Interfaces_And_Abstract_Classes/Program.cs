@@ -1,13 +1,32 @@
 ﻿using System;
-
+using System.ComponentModel;
 namespace Interfaces_And_Abstract_Classes
 {
-    class Program : IExample,ISecondExample
+    class Program : IExample,ISecondExample, INotifyPropertyChanged
     {
 
 
+        #region INotifyPropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
 
 
+        public string Name
+        {
+            get
+            {
+                return Name;
+            }
+
+            set
+            {
+                Name = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Name));
+            }
+        }
+
+
+        #endregion
+       
 
 
         static void Main(string[] args)
