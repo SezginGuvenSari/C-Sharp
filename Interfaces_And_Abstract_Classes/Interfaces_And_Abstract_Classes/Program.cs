@@ -2,9 +2,13 @@
 using System.ComponentModel;
 namespace Interfaces_And_Abstract_Classes
 {
-    class Program : IExample,ISecondExample, INotifyPropertyChanged
+    class Program : IExample, ISecondExample, INotifyPropertyChanged, IComparable
     {
-
+        #region IComparable
+        public int exampleLength;
+        Program ex1 = new Program() { exampleLength = 2 };
+        #endregion
+        
 
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
@@ -51,6 +55,25 @@ namespace Interfaces_And_Abstract_Classes
         public string Example3(string string1, string string2)
         {
             return string1 + " " + string2;
+        }
+
+        public int CompareTo(object obj)
+        {
+            Program ex2 = (Program)obj;
+
+            if (ex1.exampleLength == ex2.exampleLength)
+            {
+                return 0;
+            }
+            else if(ex1.exampleLength > ex2.exampleLength)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+
         }
 
 
