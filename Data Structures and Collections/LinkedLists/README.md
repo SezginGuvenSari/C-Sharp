@@ -9,7 +9,7 @@
 * Data− Each node of a linked list can store a data.
 * Address − Each node of a linked list contains an address to the next node, called "Next".
 > The first node of a Linked List is referenced by a pointer called Head.
-> 
+*  ![Markdown Resim](LinkedLists/png/1.png)
 
 ### **Advantages of Linked List**
 ---
@@ -24,22 +24,23 @@
 ---
 1. #### _**Singly Linked List:**_
 Singly linked lists contain nodes which have a data part and an address part, i.e., Next, which points to the next node in the sequence of nodes. The next pointer of the last node will point to null.
-
+*  ![Markdown Resim](LinkedLists/png/2.png)
 ---
 2. #### _**Doubly Linked List:**_
 In a doubly linked list, each node contains two links - the first link points to the previous node and the next link points to the next node in the sequence.The prev pointer of the first node and next pointer of the last node will point to null.
+*  ![Markdown Resim](LinkedLists/png/3.png)
 ---
 3. #### _**Circular Linked List:**_
  In the circular linked list, the next of the last node will point to the first node, thus forming a circular chain.
+*  ![Markdown Resim](LinkedLists/png/4.png)
 ---
 4. #### _**Doubly Circular Linked List:**_
 In this type of linked list, the next of the last node will point to the first node and the previous pointer of the first node will point to the last node.
----
+*  ![Markdown Resim](LinkedLists/png/5.png)
 
 ---
 ### **Creating a Linked List**
 The node of a singly linked list contains a data part and a link part. The link will contain the address of next node and is initialized to null. So, we will create class definition of node for singly linked list as follows -
-
 
 ``` C#
 internal class Node {  
